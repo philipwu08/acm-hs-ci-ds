@@ -21,7 +21,7 @@ jobs:
       id: quay
       uses: fjogeleit/http-request-action@v1
       with:
-        url: 'https://quay.io/api/v1/repository/acm-d/acm-custom-registry/tag/?limit=20'
+        url: 'https://quay.io/api/v1/repository/acm-d/acm-custom-registry/tag/?limit=50'
         method: 'GET'
         customHeaders: '{"Content-Type": "application/json"}'
     - name: Push build ID to Git
